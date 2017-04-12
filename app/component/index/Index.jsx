@@ -1,5 +1,5 @@
 import React from 'react';
-import utils from '../../public/js/utils.js';
+import utils from 'utils';
 class Entry extends React.Component {
     constructor(props) {
         super(props);
@@ -15,6 +15,7 @@ class Entry extends React.Component {
             () => this.tick(),
             1000
         );
+        console.log(utils.urlParam('type'))
     }
     componentWillUnmount() {
         clearInterval(this.timerID);

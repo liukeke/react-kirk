@@ -6,9 +6,11 @@ var publishTime = new Date().getFullYear().toString() + (new Date().getMonth() +
     new Date().getDate().toString() + new Date().getHours().toString();
 var config = {
     entry: {
-        //首页
+        /*首页*/
         index: './app/entry/index/index.js',
+        /*redux*/
         redux: './app/entry/redux/index.js',
+        /*ant design*/
         animation: './app/entry/animation/index.js'
     },
 
@@ -33,20 +35,15 @@ var config = {
             {test: /\.css$/, loader: 'style-loader!css-loader'},
             {test: /\.(png|jpg|gif|ttf|eot|woff|woff2|svg)$/, loader: 'url-loader?limit=8192&name=resource/[name].[ext]'},
             {test: /\.swf$/, loader: "file?name=js/[name].[ext]"}
-
-        ],
+        ]
     },
-
-    /*resolve: {
-        /!*  alias: {
-         'react': 'react'
-         },*!/
-        extensions: ['', '.coffee', '.js']
-    },*/
-
+    resolve: {
+        alias: {
+            utils$: path.resolve(__dirname, 'app/public/js/utils.js')
+        },
+        extensions: ['.js','.jsx','.coffee']
+    }
 };
-
-
 module.exports = config;
 var template = '<!DOCTYPE html> \n\
 <html lang="en"> \n\
