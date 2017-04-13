@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "react-locke",
   "main": "index.js",
-  "repository": "react-locke",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liukeke/react-locke"
+  },
   "scripts": {
     "d": "webpack-dev-server --devtool eval --progress --colors --port=8888 --inline --hot --content-base build",
-    "p": "set NODE_ENV=production && webpack --progress --colors --config webpack.config.publish.js",
+    "p": "webpack --progress --colors --config webpack.config.publish.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

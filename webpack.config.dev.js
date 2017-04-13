@@ -38,9 +38,6 @@ var config = {
         ]
     },
     resolve: {
-        alias: {
-            utils$: path.resolve(__dirname, 'app/public/js/utils.js')
-        },
         extensions: ['.js','.jsx','.coffee']
     }
 };

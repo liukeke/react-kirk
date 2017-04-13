@@ -1,5 +1,5 @@
 import React from 'react';
-import utils from 'utils';
+import utils from './../../public/js/utils';
 class Entry extends React.Component {
     constructor(props) {
         super(props);
