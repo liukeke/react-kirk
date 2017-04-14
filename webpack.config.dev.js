@@ -11,7 +11,9 @@ var config = {
         /*redux*/
         redux: './app/entry/redux/index.js',
         /*ant design*/
-        animation: './app/entry/animation/index.js'
+        animation: './app/entry/animation/index.js',
+        /*page*/
+        page: './app/entry/page/index.js'
     },
 
     output: {

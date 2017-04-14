@@ -8,21 +8,24 @@
     "url": "https://github.com/liukeke/react-locke"
   },
   "scripts": {
-    "d": "webpack-dev-server --devtool eval --progress --colors --port=8888 --inline --hot --content-base build",
+    "d": "webpack-dev-server --devtool eval --progress --colors --port=8881 --inline --hot --content-base build",
     "p": "webpack --progress --colors --config webpack.config.publish.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^0.28.0",
     "jquery": "^1.12.0",
     "rc-queue-anim": "^0.13.3",
     "react": "^15.5.3",
     "react-cookie": "^1.0.5",
     "react-dom": "^15.5.3",
+    "react-page-locke": "0.0.5",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.16.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
