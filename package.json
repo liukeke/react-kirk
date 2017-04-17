@@ -1,11 +1,11 @@
 {
   "name": "react-kirk",
-  "version": "1.1.0",
-  "description": "react-locke",
+  "version": "1.1.1",
+  "description": "react-kirk",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/liukeke/react-locke"
+    "url": "https://github.com/liukeke/react-kirk"
   },
   "scripts": {
     "d": "webpack-dev-server --devtool eval --progress --colors --port=8881 --inline --hot --content-base build",
