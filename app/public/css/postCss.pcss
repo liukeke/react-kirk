@@ -1,0 +1,18 @@
+$red:red;
+.title {
+  display: flex;
+  .kk{
+    @if 3 < 5 {
+      background: green;
+    }
+    @else {
+      background: blue;
+    }
+    color: $red;
+    margin: 20px;
+    padding: @margin;
+  }
+}
+@for $i from 1 to 3 {
+  .b-$i { width: $(i)px; }
+}

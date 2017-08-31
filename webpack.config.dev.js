@@ -13,7 +13,9 @@ var config = {
         /*ant design*/
         animation: './app/entry/animation/index.js',
         /*page*/
-        page: './app/entry/page/index.js'
+        page: './app/entry/page/index.js',
+        /*postCss*/
+        css: './app/entry/postCss/index.js'
     },
 
     output: {
@@ -30,17 +32,17 @@ var config = {
     module: {
         loaders: [
             {
-                test: /\.js|jsx$/,
+                test: /\.(js|jsx)$/,
                 loader: 'babel-loader?-babelrc,+cacheDirectory,presets[]=es2015,presets[]=react',
                 exclude: /node_modules/,
             },
-            {test: /\.css$/, loader: 'style-loader!css-loader'},
+            {test: /\.(css|pcss)$/, loader: 'style-loader!css-loader!postcss-loader'},
             {test: /\.(png|jpg|gif|ttf|eot|woff|woff2|svg)$/, loader: 'url-loader?limit=8192&name=resource/[name].[ext]'},
             {test: /\.swf$/, loader: "file?name=js/[name].[ext]"}
         ]
     },
     resolve: {
-        extensions: ['.js','.jsx','.coffee']
+        extensions: ['.js','.jsx','.coffee','.pcss']
     }
 };
 module.exports = config;
